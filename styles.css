@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(194, 255, 255);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    height: 64rem;
+    width: 20rem;
+    background-color: black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+}
+.rod{
+    background-color: black;
+    height: 30rem;
+    width: 8rem;
+    border-radius: 5%;
+}
+.red{
+    width: 17em;
+    border-radius: 50%;
+    height: 17em;
+    background-color: rgb(131, 5, 5);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    animation: changeColor 10s ease-in-out 0s 1 ;
+}
+.yellow{
+    height: 17em;
+    width: 17em;
+    border-radius: 50%;
+    background-color: rgb(127, 127, 2);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    animation: newColor 10s ease-in-out 10s 1 ;
+}
+.green{
+    height: 17em;
+    width: 17em;
+    border-radius: 50%;
+    background-color: rgb(1, 119, 1);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    animation: alterColor 10s ease-in-out 20s 1 ;
+}
+@keyframes changeColor{
+    0%{background-color: rgb(131, 5, 5);}
+    50%{background-color: rgb(216, 27, 27);}
+    75%{background-color: red;}
+    100%{background-color: rgb(255, 0, 0);}
+}
+@keyframes newColor{
+    0%{background-color: rgb(127, 127, 2);}
+    50%{background-color: rgb(198, 198, 18);}
+    75%{background-color: yellow;}
+    100%{background-color: yellow;}
+}
+@keyframes alterColor{
+    0%{background-color: rgb(1, 119, 1);}
+    50%{background-color: rgb(21, 201, 21);}
+    75%{background-color: rgb(2, 254, 2);}
+    100%{background-color: rgb(2, 254, 2);}
+}
